@@ -36,5 +36,15 @@ class Person:
 
 person1 = Person("Yeşim", "Doğan", 22)
 print(person1.firstName + " " + person1.lastName + " " + str(person1.age))
+
+class Worker(Person):
+    def __init__(self, salary):
+        self.salary = salary
+        
+
+class Customer(Person):
+    def __init__(self, creditCardNumber):
+        self.creditCardNumber = creditCardNumber    
+        
         
 
